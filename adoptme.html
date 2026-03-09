@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adopt a Dog</title>
+    <link rel="stylesheet" href="css/adoptmeStyle.css">
+</head>
+<body>
+    <h6 id="student-info">6833195121 นายพัทธพล ศักดิ์เสริมเกียรติ</h6>
+
+    <div class="header">
+        <h1>แบบฟอร์มขอรับอุปการะ</h1>
+    </div>
+
+    <div class="container">
+        <form action="#" method="post">
+            <p><strong>1.) ข้อมูลส่วนตัวของผู้สนใจรับอุปการะสุนัข </strong></p>
+            <label for="fullname">ชื่อ-นามสกุล:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="ชื่อ-นามสกุลของคุณ" required>
+            <label for="tel">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="tel" name="tel" placeholder="เบอร์โทรศัพท์ของคุณ" required>
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" placeholder="อีเมลของคุณ" required>
+
+            <p><strong>2.) สิ่งแวดล้อมในการเลี้ยงดู</strong></p>
+            <label>ที่อยู่:</label>
+            <textarea id="address" name="address" placeholder="ที่อยู่ของคุณ"></textarea>
+
+            <label>ลักษณะที่อยู่อาศัย</label>
+            <select name="housing">
+                <option value="garden">บ้านสวน</option>
+                <option value="single">บ้านเดี่ยว</option>
+                <option value="townhome">บ้านทาวน์โฮม</option>
+                <option value="condo">คอนโดมิเนียม/หอพัก</option>
+            </select>
+
+            <label>สถานที่เลี้ยงดู:</label>
+            <input type="radio" id="inside" name="location" value="1" checked> 
+            <label for="inside" class="radio-label">เลี้ยงสุนัขภายในบ้าน</label> 
+            <input type="radio" id="outside" name="location" value="2">
+            <label for="outside" class="radio-label">เลี้ยงสุนัขภายนอกบ้าน</label>
+            
+            <label for="pet_count">จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน:</label>
+            <input type="number" id="pet_count" name="pet_count" min="0"> 
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="confirm" name="confirm" required> <label for="confirm">การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองการได้รับอุปการะสุนัข</label>
+            </div>
+
+        </form>
+    </div> 
+</body>
+</html>
