@@ -1,4 +1,16 @@
 function validateForm() {
+    let fullname = document.getElementById("fullname").value;
+    if (fullname == "") {
+        alert("กรุณากรอกชื่อ-นามสกุล");
+        return false;
+    }
+
+    let tel = document.getElementById("tel").value;
+    if (tel == "") {
+        alert("กรุณากรอกเบอร์โทรศัพท์");
+        return false;
+    }
+
     let petCount = document.getElementById("pet_count").value;
 
     if(petCount == "" || petCount < 0 || petCount > 100) {
